@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript</title>
+</head>
+
+<body>
+    <div id="app">
+        <div>
+            <div id="boxGeral">
+            </div>
+        </div>      
+        <div style="clear: both;margin-top:10px">       
+            <button onmouseover="criarQuadrado()" class="botao">Criar Quadrado</button>
+        </div>  
+    </div>
+
+    <script>
+        function criarQuadrado() {
+            
+            let boxElement = document.createElement('div');
+            boxElement.style.width = '100px';
+            boxElement.style.height = '100px';
+            boxElement.style.backgroundColor = '#f00';
+            boxElement.style.float= 'left';
+            boxElement.style.marginRight = '10px';
+            boxElement.style.marginTop = '10px';
+
+            var div = document.getElementById('boxGeral');
+            div.appendChild(boxElement);
+        }
+    </script>
+</body>
+
+</html>
